@@ -1,0 +1,17 @@
+// Display Left most Top LED
+void setup() {
+  volatile char *dirf,*dirk;
+  dirf=0x30;
+  *dirf=0xFF;
+  dirk=0x107;
+  *dirk=0xFF;
+}
+
+void loop() {
+volatile char *outf,*outk;
+outf=0x31;
+outk=0x108;
+volatile char i;
+  *outf=0x80;
+  *outk=0x7F;
+}
